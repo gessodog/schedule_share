@@ -1,0 +1,124 @@
+/* 全体のフォームスタイル */
+.registration-main {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* フォームヘッダーのスタイル */
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header-text {
+  font-size: 24px;
+  color: #333;
+}
+
+/* フォームグループのスタイル */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* ラベルと必須マークのスタイル */
+.form-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-text {
+  font-weight: bold;
+}
+
+.indispensable {
+  color: red;
+  font-size: 12px;
+}
+
+/* 入力フィールドのスタイル */
+.input-default {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-default:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}
+
+/* インフォメーションテキストのスタイル */
+.info-text {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 登録ボタンのスタイル */
+.register-btn {
+  text-align: center;
+}
+
+.register-red-btn {
+  background-color: #e3342f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-red-btn:hover {
+  background-color: #cc1f1a;
+}
+
+/* その他のリンクのスタイル */
+.devise-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.devise-links a {
+  color: #3490dc;
+  text-decoration: none;
+}
+
+.devise-links a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  text-align: center;
+}
+
+.login-red-btn{
+  background-color: #e3342f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back_color{
+  background: linear-gradient(135deg, #ff8801, #000000); /* グラデーションの背景色 */
+  padding: 20px; /* 任意のパディングを追加 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 任意のシャドウ効果を追加 */
+  height: 100vh; /* 全体の高さをビューポートの高さに設定 */
+}

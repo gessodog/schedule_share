@@ -1,0 +1,53 @@
+/* ヘッダー全体のスタイル */
+.top-page-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ナビゲーションメニューのスタイル */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* リストのスタイル */
+.lists-left, .lists-right {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 23px;
+}
+
+/* リストアイテムのスタイル */
+.lists-left li, .lists-right li {
+  margin: 0 15px;
+}
+
+/* リンクのスタイル */
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+/* リンクのホバースタイル */
+.nav a:hover {
+  background-color: #555;
+}
+
+/* 特定のクラスのスタイル（必要に応じて変更） */
+.category-list, .brand-list, .user-name, .logout, .login, .sign-up {
+  /* ここにスタイルを追加できます */
+}

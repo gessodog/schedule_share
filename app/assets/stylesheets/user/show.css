@@ -1,0 +1,17 @@
+.notice {
+  color: green;
+  background-color: #e6ffe6;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.alert {
+  color: red;
+  background-color: #ffe6e6;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid red;
+  border-radius: 5px;
+}

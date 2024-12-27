@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+
+<textarea id="model-time-schedule" style="display:none;"><%= @schedule.to_json %></textarea>
+<div class="schedule_info">
+<div class="schedule_title"><%= @schedule.title %></div>
+<div class="schedule_number"><%= @schedule.number %></div>
+<div class="schedule_start_time"><%= @schedule.start.name %>から</div>     <%# 3は1:00 %>
+<div class="schedule_end_time"><%= @schedule.end.name %>まで</div>
+</div>
+
+<%# タイムスケジュール %>
+
+<div class="schedule_column">
+  <div class="time_space">
+    <div class="first_time_font">0:00</div>
+  </div>
+  <div class="square">
+    <div class="first_top_square"></div>
+    <div class="first_bottom_square"></div>
+  </div>
+</div>
+<% 22.times do |i| %> 
+<div class="schedule_column">
+  <div class="time_space">
+    <div class="time_font"><%= i + 1 %>:00</div>
+  </div>
+  <div class="square">
+    <div class="color_square"></div>
+    <div class="color_square" ></div>
+  </div>
+</div>
+<% end %>
+<div class="schedule_column">
+  <div class="time_space">
+    <div class="last_time_font">23:00</div>
+  </div>
+  <div class="square">
+    <div class="last_top_square"></div>
+    <div class="last_bottom_square"></div>
+  </div>
+</div>
+
+<div class="none_space"></div>

@@ -1,0 +1,142 @@
+#calendar {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,1);
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+#calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar-table th, #calendar-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#calendar-table th {
+  background-color: #bbbbbb;
+}
+
+
+#sunday {          /* 日曜日のCSS */
+  color: red;
+}
+
+#saturday {        /* 土曜日のCSS */
+  color: blue;
+}
+
+#subcell {              /* セルに入ったサブセルのCSS */
+  width: 200px;           /* おそらく親の都合で適用できてない */
+  margin-top: 10px;
+  white-space: nowrap;
+  color: black;
+}
+
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* レイアウトに応じて調整 */
+  background: linear-gradient(135deg, #ff8801, #000000); /* グラデーションの背景色 */
+}
+
+.mypage_link .user-name,
+.top_login .login,
+.top_registration .sign-up {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 10px; /* スペースのための余白 */
+}
+
+.mypage_link .user-name:hover,
+.top_login .login:hover,
+.top_registration .sign-up:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.top_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.mypage-title {
+  width: 100%;
+  background: linear-gradient(135deg, #ff8801, #000000); /* グラデーションの背景色 */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* 上下のパディング */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 任意のシャドウ効果を追加 */
+  top: 0; /* 上部に配置 */
+}
+
+.form_schedule_title {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  border-bottom: 2px solid #333; 
+  padding-bottom: 10px; 
+}
+
+.mypage_title_text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* テキストの色 */
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.form_schedule {
+  margin: 20px;
+}
+.weight-bold-text { 
+  font-weight: bold; 
+  margin-top: 10px; 
+}
+
+.numbers-text, .titles-text, .select-box {
+  width: 20%; 
+  padding: 8px; 
+  margin-top: 5px; 
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px; 
+}
+
+.sell-btn {
+  background-color: #ff0000; 
+  color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; 
+  margin-left: 50px;
+}
+
+.sell-btn:hover { background-color: #0056b3; }
+

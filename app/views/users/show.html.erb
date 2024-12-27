@@ -1,0 +1,65 @@
+<%= render "shared/header" %>
+
+
+<div class="mypage-title">
+  <div class="mypage_title_text"><%= @name %>さんのマイページ</div>
+  <div class="mypage_title_text">今日は<%= @today.year %>年<%= @today.month %>月<%= @today.day %>日です</div>
+</div>
+
+<textarea id="model-data" style="display:none;"><%= @schedule.to_json %></textarea>
+
+<div id="calendar">
+    <div id="calendar-header">
+        <button id="prev">前の月</button>
+        <h2 id="month-year"></h2>
+        <button id="next">次の月</button>
+    </div>
+    <table id="calendar-table">
+        <thead>
+            <tr>
+                <th id="sunday">Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th id="saturday">Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+            <!-- 日付がここに表示されます -->
+        </tbody>
+    </table>
+</div>
+
+<div class="form_schedule">
+  <div class="form_schedule_title">予定の追加</div>
+
+  <% if flash[:notice] %> 
+    <div class="notice"><%= flash[:notice] %></div> 
+  <% end %>
+  <% if flash[:alert] %> 
+    <div class="alert"><%= flash[:alert] %></div> 
+  <% end %>
+
+  <%= form_with model: @schedule, url: user_schedules_path(current_user), local: true do |f| %>
+    <div class="weight-bold-text">
+      日付
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :number, class:"numbers-text", id:"number", placeholder:"例）2024-1-1(半角数字)", maxlength:"40" %>
+    <div class="weight-bold-text">
+      予定のタイトル
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :title, class:"titles-text", id:"title", placeholder:"タイトル（必須 10文字まで)", maxlength:"10" %>
+    <div class="weight-bold-text">
+      予定の時間
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.collection_select(:start_id, Start.all, :id, :name, {}, {class:"select-box", id:"start"}) %>
+    から
+    <%= f.collection_select(:end_id, End.all, :id, :name, {}, {class:"select-box", id:"end"}) %>
+    <%= f.submit "追加する" ,class:"sell-btn" %>
+  <% end %>
+</div>

@@ -1,0 +1,136 @@
+.schedule_column {
+  display: flex;
+}
+
+.time_space {
+  width: 30vw;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.square {
+  width: 500px;
+  height: 50px;
+}
+
+.first_top_square {
+  border-top: 5px solid black;
+  border-bottom: 2px dashed black;
+  width: 500px;
+  height: 19px;
+}
+
+.first_bottom_square {
+  border-bottom: 2px dashed black;
+  width: 500px;
+  height: 22px;
+}
+
+.last_top_square {
+  border-bottom: 2px dashed black;
+  width: 500px;
+  height: 22px;
+}
+
+.last_bottom_square {
+  border-bottom: 5px solid black;
+  width: 500px;
+  height: 21px;
+}
+
+.color_square {
+  border-bottom: 2px dashed black;
+  width: 500px;
+  height: 23px;
+}
+
+/* .bottom_square {
+  border-bottom: 2px dashed black;
+  width: 500px;
+  height: 23px;
+} */
+
+
+
+
+
+.first_time_font {
+  width: 60px;
+  border-top: 5px solid black; 
+  border-bottom: 2px dashed black;
+  border-right: 3px solid black; /* 右に黒い線を入れる */
+}
+
+.last_time_font {
+  width: 60px;
+  border-bottom: 5px solid black;
+  border-right: 3px solid black; /* 右に黒い線を入れる */
+}
+
+.time_font {
+  width: 60px;
+  color: black;
+  border-bottom: 2px dashed black;
+  border-right: 3px solid black; /* 右に黒い線を入れる */
+}
+
+
+
+
+#add_red {                /* 要素に赤色を追加する  id */ 
+  background-color: red;
+}
+
+.add_red {
+  background-color: red;
+}
+
+
+/* ここからタイムスケジュールの装飾 */
+.schedule_info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.schedule_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.schedule_number, .schedule_start_time, .schedule_end_time {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.time_space {
+  width: 60px;
+  text-align: right;
+  font-size: 18px;
+  color: black;
+}
+
+.first_top_square, .first_bottom_square, .color_square, .last_top_square, .last_bottom_square {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.first_top_square, .last_top_square {
+  background-color: #dbdbdb;
+}
+
+.color_square:nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+.none_space{
+  width: 100vh;
+  height: 70px;
+}
