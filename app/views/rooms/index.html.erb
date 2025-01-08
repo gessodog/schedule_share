@@ -1,0 +1,12 @@
+<%= render "shared/header" %>
+
+
+<%= link_to  "ルームの作成画面", new_room_path, class: "user-name" %> 
+
+
+<h1>[Room List]</h1>
+<ul>
+  <% @room.each do |room| %>
+    <li><%= room.name %></li>
+  <% end %>
+</ul>

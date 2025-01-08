@@ -1,24 +1,24 @@
-# README
+# アプリケーション名
+schedule_share
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+ユーザー同士で予定をシェアすることで、一緒に旅行や遊びに行く計画を立てる際の助けとなるアプリ。
 
-Things you may want to cover:
+# URL
+https://schedule-share.onrender.com
 
-* Ruby version
+# テスト用アカウント
 
-* System dependencies
 
-* Configuration
+# 利用方法
 
-* Database creation
 
-* Database initialization
+## 
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 
 
-* Deployment instructions
 
-* ...
+# アプリケーションを作成した背景
+
+

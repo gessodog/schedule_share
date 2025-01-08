@@ -5,6 +5,7 @@
   <% if user_signed_in? %>
   <div class="mypage_link">
     <%= link_to  current_user.name + "さんのマイページ", "/users/#{current_user.id}", class: "user-name" %> 
+    <%= link_to  "ルーム", rooms_path, class: "user-name" %> 
   </div>
   <% else %>
   <div class="top_login"><%= link_to 'ログイン', new_user_session_path, class: "login" %></div>
