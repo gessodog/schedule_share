@@ -1,7 +1,9 @@
 <%= render "shared/header" %>
 
-
-<%= link_to  "ルームの作成画面", new_room_path, class: "user-name" %> 
+<div class="room_main">
+<div class="mypage_link">
+  <%= link_to  "ルームの作成画面", new_room_path, class: "user-name" %> 
+</div>
 
 
 <h1>[Room List]</h1>
@@ -10,3 +12,4 @@
     <li><%= room.name %></li>
   <% end %>
 </ul>
+</div>

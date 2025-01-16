@@ -1,0 +1,6 @@
+.room_main {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* レイアウトに応じて調整 */
+  background: linear-gradient(135deg, #ff8801, #000000); /* グラデーションの背景色 */
+}
