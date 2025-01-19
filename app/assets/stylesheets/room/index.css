@@ -1,6 +1,50 @@
+/* 全体のスタイル */
 .room_main {
-  display: flex;
+  /* display: flex; */
+  padding: 20px;
   justify-content: center;
+  margin: auto;
   height: 100vh; /* レイアウトに応じて調整 */
   background: linear-gradient(135deg, #ff8801, #000000); /* グラデーションの背景色 */
+}
+
+/* ルーム作成リンクのスタイル */ 
+.room_make_link a { 
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: red; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+  margin-bottom: 40px;
+  margin-top: 30px;
+} 
+
+.room_make_link a:hover { 
+  background-color: #0056b3; 
+}
+
+/* ルームリストのスタイル */
+.room_list h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.room_list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.room_list li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.room_list li:hover {
+  background-color: #f1f1f1;
 }

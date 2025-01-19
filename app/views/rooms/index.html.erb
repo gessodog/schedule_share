@@ -1,15 +1,16 @@
 <%= render "shared/header" %>
 
 <div class="room_main">
-<div class="mypage_link">
-  <%= link_to  "ルームの作成画面", new_room_path, class: "user-name" %> 
-</div>
+  <div class="room_make_link">
+    <%= link_to  "ルームの作成画面", new_room_path, class: "user-name" %> 
+  </div>
 
-
-<h1>[Room List]</h1>
-<ul>
-  <% @room.each do |room| %>
-    <li><%= room.name %></li>
-  <% end %>
-</ul>
+  <div class="room_list">
+    <h1>[Room List]</h1>
+    <ul>
+      <% @room.each do |room| %>
+        <li><%= room.name %></li>
+      <% end %>
+    </ul>
+  </div> 
 </div>
